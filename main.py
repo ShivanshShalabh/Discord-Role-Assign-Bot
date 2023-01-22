@@ -82,7 +82,7 @@ async def verify(ctx, fname, sname, class_, sec):
 
 
 @client.command()
-@commands.has_any_role('President', 'Vice President', 'Department Heads')
+@commands.has_any_role(...["{LIST OF ROLES}"])
 async def addroles(ctx, role: discord.Role, user: discord.Member):
     await user.add_roles(role)
     await ctx.send(f"Successfully assigned the role {role} to {user}")
