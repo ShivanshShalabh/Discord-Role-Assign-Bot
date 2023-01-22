@@ -10,7 +10,7 @@ from watchdog.events import FileSystemEventHandler
 print("file.py is active now")
 
 header = {
-    'authorization': 'NzExMjUzNDI5MzU1MjgyNDMz.YLVGFw.sHzsHR7uGFxsPfW76jgjqsUMpSA'
+    'authorization': "{AUTH}"
 }
 
 
@@ -19,12 +19,12 @@ def sendMsg(cnt):
         'content': cnt
     }
     r = requests.post(
-        "https://discord.com/api/v9/channels/849021065619570751/messages", data=payload, headers=header)
+        "{URL}", data=payload, headers=header)
 
 
 class OnMyWatch:
     # Set the directory on watch
-    watchDirectory = "/home/shivansh/Shivansh Comp Pract/Discord Bot Final/"
+    watchDirectory = os.getcwd()
 
     def __init__(self):
         self.observer = Observer()
