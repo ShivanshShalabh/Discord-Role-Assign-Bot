@@ -1,0 +1,2 @@
+# Roler | The Discord Bot
+Roler is a Discord bot that uses Python to assign roles to users based on information stored in an Excel file. I developed this tool to streamline role assignment in our Tech Club server, and it has since been made open-source for others to use in their own Discord communities. By automating this process, Roler saves time and reduces the burden of manual role management, making it easier to manage large servers and clubs.
